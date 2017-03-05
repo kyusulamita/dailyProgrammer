@@ -33,4 +33,4 @@ void shitPostCreator(string shitPost, int width, int height){
 int main(){
 	shitPostCreator("rekt" , 2 , 2);
 	shitPostCreator("panda", 5 , 5);
-}
+}																
