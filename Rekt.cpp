@@ -18,12 +18,11 @@ void shitPostCreator(string shitPost, int width, int height){
 
 	for (int curRow = 0; curRow < tHeight; curRow++){
 		for (int curCol = 0; curCol < tWidth; curCol++){
-			if (!(curRow % doubleLen)) cout << triBase[curCol % doubleLen];
-			else if (!(curRow % len_min1)) cout << triBase[(curCol + len_min1) % doubleLen]; 
-			else if (!(curCol % doubleLen)) cout << triBase[curRow % doubleLen];
-			else if (!(curCol % len_min1)) cout << triBase[(curRow + len_min1) % doubleLen];
-			else cout << ' ';
-			cout << ' ';
+			if (!(curRow % doubleLen)) cout << triBase[curCol % doubleLen] << ' ';
+			else if (!(curRow % len_min1)) cout << triBase[(curCol + len_min1) % doubleLen] << ' '; 
+			else if (!(curCol % doubleLen)) cout << triBase[curRow % doubleLen] << ' ';
+			else if (!(curCol % len_min1)) cout << triBase[(curRow + len_min1) % doubleLen] << ' ';
+			else cout << "  ";
 		}
 		cout << endl;
 	}
@@ -33,6 +32,5 @@ void shitPostCreator(string shitPost, int width, int height){
 
 int main(){
 	shitPostCreator("rekt" , 2 , 2);
-	shitPostCreator("rekt" , 4 , 3);
-	shitPostCreator("maurica", 2, 2);
+	shitPostCreator("panda", 5 , 5);
 }
